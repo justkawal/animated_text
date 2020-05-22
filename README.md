@@ -99,10 +99,8 @@ Now in your `Dart` code, you can use:
       
    ````
  
-<a href="https://www.paypal.me/kawal7415">  
-    <img src="https://github.com/kawal7415/animated_text/blob/master/tesla.gif" 
-      alt="Donate" />  
-  </a>
+<img src="https://github.com/kawal7415/animated_text/blob/master/tesla.gif?raw=true" 
+      alt="Animated_Text" /> 
   
 
 ### Widget Options
@@ -124,7 +122,5 @@ On-going implementation for future:
 
 [Donate with PayPal](https://www.paypal.me/kawal7415)
 
-<a href="https://www.paypal.me/kawal7415">  
-    <img src="https://github.com/kawal7415/animated_text/blob/master/support-us.gif"  
-      alt="Donate" />  
-  </a>
+<img src="https://github.com/kawal7415/animated_text/blob/master/support-us.gif?raw=true"  
+      alt="Donate" />
