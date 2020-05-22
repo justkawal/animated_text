@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 300,
               child: new AnimatedText(
                 alignment: Alignment.center,
+                speed: Duration(milliseconds: 1000),
                 controller: AnimatedTextController.loop,
                 displayTime: Duration(milliseconds: 2000),
                 wordList: ['flutter', 'future'],
@@ -48,6 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.white,
                     fontSize: 55,
                     fontWeight: FontWeight.w700),
+                onAnimate: (index) {
+                  print("index:" + index.toString());
+                },
+                onFinished: () {
+                  print("Animtion finished");
+                },
               ),
             ),
           ],
