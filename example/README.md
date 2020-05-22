@@ -98,19 +98,33 @@ Now in your `Dart` code, you can use:
         ),
       
    ````
-   
+ 
+<a href="https://www.paypal.me/kawal7415">  
+    <img src="https://github.com/kawal7415/animated_text/blob/master/tesla.gif" 
+      alt="Donate" />  
+  </a>
+  
+
 ### Widget Options
 key | description
 ------------ | -------------
- key | description
-
-
-
+ controller | controls the animation state ````enum AnimatedTextController { play, pause, stop, restart, loop }```` by-default it is set to ````AnimatedTextController.play````
+ onAnimate | called whenever the next animation is going to start
+ onFinished | called when the animation is finished and is not a ````looping animation````
+ repeatCount | it tells how many times the animation should be repeated by default it is set to ````repeatCount = 5````
+ textStyle | Uses the ````DefaultTextStyle```` of the context if not used.
+ displayTime | tells for how much time the animation should wait and display the text before starting the next animation.
+ 
+ 
 ## Features coming in next version
 On-going implementation for future:
-- Multiple lines
 - Custom Fade Animation Selection
 
 ## Help us to keep going.
 
 [Donate with PayPal](https://www.paypal.me/kawal7415)
+
+<a href="https://www.paypal.me/kawal7415">  
+    <img src="https://github.com/kawal7415/animated_text/blob/master/support-us.gif"  
+      alt="Donate" />  
+  </a>
