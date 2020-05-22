@@ -108,7 +108,7 @@ Now in your `Dart` code, you can use:
 ### Widget Options
 key | description
 ------------ | -------------
- controller | controls the animation state ````enum AnimatedTextController { play, pause, stop, restart, loop }```` by-default if is set to ````AnimatedTextController.play````
+ controller | controls the animation state ````enum AnimatedTextController { play, pause, stop, restart, loop }```` by-default it is set to ````AnimatedTextController.play````
  onAnimate | called whenever the next animation is going to start
  onFinished | called when the animation is finished and is not a ````looping animation````
  repeatCount | it tells how many times the animation should be repeated by default it is set to ````repeatCount = 5````
