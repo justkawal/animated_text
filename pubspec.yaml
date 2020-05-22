@@ -1,0 +1,17 @@
+name: animated_text
+description: Text Animations for Flutter which provides animated translation between the texts by reusing the similar alphabets between them.
+version: 1.0.0
+homepage: https://github.com/kawal7415/animated_text.git
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
