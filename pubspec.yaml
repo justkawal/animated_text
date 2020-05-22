@@ -1,5 +1,5 @@
 name: animated_text
-description: Text Animations for Flutter which provides animated translation between the texts by reusing the similar alphabets between them.
+description: Animated_Text for Flutter provides animated translation between the words by reusing the similar alphabets between them.
 version: 1.0.0
 homepage: https://github.com/kawal7415/animated_text.git
 
