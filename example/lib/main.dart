@@ -25,36 +25,25 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text Animations'),
+        title: Text('Animated Text'),
       ),
       body: Container(
-        color: Colors.yellow,
+        color: Colors.white,
         child: Column(
           children: <Widget>[
             Container(
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assets/three.jpg'), fit: BoxFit.fill),
-              ),
               height: 300,
-              child: new AnimatedText(
+              child: AnimatedText(
                 alignment: Alignment.center,
                 speed: Duration(milliseconds: 1000),
                 controller: AnimatedTextController.loop,
-                displayTime: Duration(milliseconds: 2000),
-                wordList: ['flutter', 'future'],
-                repeatCount: 10,
+                displayTime: Duration(milliseconds: 1000),
+                wordList: ['animations.', 'are.', 'easier.', 'now.'],
                 textStyle: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 55,
                     fontWeight: FontWeight.w700),
-                onAnimate: (index) {
-                  print("index:" + index.toString());
-                },
-                onFinished: () {
-                  print("Animtion finished");
-                },
               ),
             ),
           ],
