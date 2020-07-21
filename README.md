@@ -1,9 +1,3 @@
-## Donate (Be the first one)
-
-I can code faster but my laptop is **lazy**. Help me upgrade it. Please consider donating if you think Animated_Text is helpful. 
-
-[Paypal Me on paypal.me/kawal7415](https://www.paypal.me/kawal7415)
-
   <a href="https://flutter.io">  
     <img src="https://img.shields.io/badge/Platform-Flutter-yellow.svg"  
       alt="Platform" />  
@@ -78,6 +72,10 @@ Now in your `Dart` code, you can use:
 
  ### AnimatedText
  
+ 
+![g](https://media.giphy.com/media/UVetccR4n3V38DUTmE/giphy.gif)
+
+ 
  ````dart
       /** Your parent widget here */
       
@@ -100,10 +98,7 @@ Now in your `Dart` code, you can use:
               ),
       
    ````
- 
-<img src="https://github.com/kawal7415/animated_text/blob/master/animation.gif?raw=true" 
-      alt="Animated_Text" /> 
-  
+
 
 ### Widget Options
 key | description
@@ -120,9 +115,11 @@ key | description
 On-going implementation for future:
 - Custom Fade Animation Selection
 
-## Help us to keep going.
+## Help us to keep going. (Be the first one)
 
-[Donate with PayPal](https://www.paypal.me/kawal7415)
+I can code faster but my laptop is **lazy**. Help me upgrade it. Please consider donating if you think Animated_Text is helpful. 
+
+[Paypal Me on paypal.me/kawal7415](https://www.paypal.me/kawal7415)
 
 <img src="https://github.com/kawal7415/animated_text/blob/master/support-us.gif?raw=true"  
       alt="Donate" />
