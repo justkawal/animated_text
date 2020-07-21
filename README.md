@@ -82,20 +82,22 @@ Now in your `Dart` code, you can use:
       /** Your parent widget here */
       
       child : AnimatedText(
-        alignment: Alignment.center,
-        speed: Duration(milliseconds: 2000),
-        controller: AnimatedTextController.loop,
-        displayTime: Duration(milliseconds: 2000),
-        wordList: ['TESLA', 'APPLE', 'GOOGLE', 'AMAZON'],
-        repeatCount: 10,
-        textStyle: TextStyle(color: Colors.black, fontSize: 55, fontWeight: FontWeight.w700),
-        onAnimate: (index) {
-                  print("Animating index:" + index.toString());
+                alignment: Alignment.center,
+                speed: Duration(milliseconds: 1000),
+                controller: AnimatedTextController.loop,
+                displayTime: Duration(milliseconds: 1000),
+                wordList: ['animations.', 'are.', 'easier.', 'now.'],
+                textStyle: TextStyle(
+                    color: Colors.black,
+                    fontSize: 55,
+                    fontWeight: FontWeight.w700),
+                    onAnimate: (index) {
+                print("Animating index:" + index.toString());
                 },
-        onFinished: () {
+                 onFinished: () {
                   print("Animtion finished");
                 },
-        ),
+              ),
       
    ````
  
