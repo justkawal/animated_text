@@ -394,12 +394,10 @@ class _AnimatedTextState extends State<AnimatedText>
               height: constraints.maxHeight,
               alignment: widget.alignment,
               child: Wrap(
-                children: separatedStrings[index]
-                    .toList()
-                    .asMap()
-                    .entries
-                    .map((e) => buildPositionProvider(e))
-                    .toList(),
+                children:
+                    separatedStrings[index].toList().asMap().entries.map((e) {
+                  return buildPositionProvider(e);
+                }).toList(),
               ),
             ),
             // Fade out
