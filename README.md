@@ -101,7 +101,7 @@ Now in your `Dart` code, you can use:
       
    ````
  
-<img src="https://github.com/kawal7415/animated_text/blob/master/animation.gif" 
+<img src="https://github.com/kawal7415/animated_text/blob/master/animation.gif?raw=true" 
       alt="Animated_Text" /> 
   
 
