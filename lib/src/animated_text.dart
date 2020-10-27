@@ -70,8 +70,8 @@ class AnimatedText extends StatefulWidget {
       this.onAnimate})
       : assert(wordList != null && wordList.length != 0 && wordList.length > 1,
             'AnimatedText: wordList must contain aleast 2 strings.'),
-        assert(repeatCount > 0,
-            'AnimatedText: repeatCount should be greator than 0'),
+        assert(repeatCount >= 0,
+            'AnimatedText: repeatCount should be greator than equal to 0'),
         super(key: key);
   @override
   _AnimatedTextState createState() => _AnimatedTextState();
@@ -186,7 +186,6 @@ class _AnimatedTextState extends State<AnimatedText>
     preProcesedFadeOut = Map<String, List<String>>();
     separatedStrings = List<List<String>>();
     animateDataMap = Map<String, Map<String, _Position>>();
-    print(words.toString());
     length = words.length;
     words.forEach((element) {
       Map<String, int> map = <String, int>{};
@@ -663,5 +662,5 @@ _Position _getPositionbyKey(GlobalKey key) {
 }
 
 bool _isRun(dynamic d) {
-  return (d ??= null) != null;
+  return d != null;
 }

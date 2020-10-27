@@ -36,8 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 300,
               child: AnimatedText(
                 alignment: Alignment.center,
-                speed: Duration(milliseconds: 1000),
-                controller: AnimatedTextController.loop,
+                speed: Duration(milliseconds: 3000),
+                controller: AnimatedTextController.play,
+                repeatCount: 0,
                 displayTime: Duration(milliseconds: 1000),
                 wordList: ['animations.', 'are.', 'easier.', 'now.'],
                 textStyle: TextStyle(

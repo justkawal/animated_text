@@ -2,8 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ## [Future Updates coming soon]
-- Multi Lines
 - Custom fade type selection
+
+## [1.0.2] - 2020-07-21
+### Changes
+- bug fixes in repeat-count
 
 ## [1.0.2] - 2020-07-21
 ### Changes
