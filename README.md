@@ -27,9 +27,9 @@
       alt="Stars" />  
   </a>
 
-# Animated_Text
+# Animated Text
 
-[Animated_Text](https://www.pub.dev/packages/animated_text) helps you to animate between words by re-using the similar alphabets in them.
+[Animated Text](https://www.pub.dev/packages/animated_text) helps you to animate between words by re-using the similar alphabets in them.
 
 
 # Installing
@@ -39,7 +39,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  animated_text: ^1.0.2
+  animated_text: ^1.0.3
 ```
 
 ### 2. Install it
@@ -76,7 +76,7 @@ Now in your `Dart` code, you can use:
 ![g](https://media.giphy.com/media/UVetccR4n3V38DUTmE/giphy.gif)
 
  
- ````dart
+````dart
       /** Your parent widget here */
       
       child : AnimatedText(
@@ -96,8 +96,8 @@ Now in your `Dart` code, you can use:
                   print("Animtion finished");
                 },
               ),
-      
-   ````
+
+````
 
 ### Widget Options
 key | description
@@ -112,7 +112,7 @@ key | description
  
 ## Features coming in next version
 On-going implementation for future:
-- Custom Fade Animation Selection
+- Custom Fade Animation
 
 ## Donate
 
