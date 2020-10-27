@@ -114,11 +114,6 @@ key | description
 On-going implementation for future:
 - Custom Fade Animation Selection
 
-## Help us to keep going. (Be the first one)
-
-I can code faster but my laptop is **lazy**. Help me upgrade it. Please consider donating if you think Animated_Text is helpful. 
+## Donate
 
 [Paypal Me on paypal.me/kawal7415](https://www.paypal.me/kawal7415)
-
-<img src="https://github.com/kawal7415/animated_text/blob/master/support-us.gif?raw=true"  
-      alt="Donate" />
