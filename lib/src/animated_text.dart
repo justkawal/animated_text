@@ -81,8 +81,9 @@ class _AnimatedTextState extends State<AnimatedText>
     with TickerProviderStateMixin {
   bool isFirst = true, pause = false;
   int index = 0, length, finalCounter = 0;
-  List<String> words = List<String>();
-  List<List<String>> separatedStrings = List<List<String>>();
+  List<String> words = List<String>.empty(growable: true);
+  List<List<String>> separatedStrings =
+      List<List<String>>.empty(growable: true);
   Map<String, Map<String, _Position>> animateDataMap =
       Map<String, Map<String, _Position>>();
   Map<String, List<String>> preProcesedFadeIn = Map<String, List<String>>(),
@@ -184,12 +185,12 @@ class _AnimatedTextState extends State<AnimatedText>
     words = List<String>.from(widget.wordList);
     preProcesedFadeIn = Map<String, List<String>>();
     preProcesedFadeOut = Map<String, List<String>>();
-    separatedStrings = List<List<String>>();
+    separatedStrings = List<List<String>>.empty(growable: true);
     animateDataMap = Map<String, Map<String, _Position>>();
     length = words.length;
     words.forEach((element) {
       Map<String, int> map = <String, int>{};
-      List<String> lis = List<String>();
+      List<String> lis = List<String>.empty(growable: true);
       element.replaceAll(' ', ' ').split('').forEach((element) {
         map[element] = (map[element] ??= 0) + 1;
         lis.add('$element${map[element]}');
@@ -211,7 +212,8 @@ class _AnimatedTextState extends State<AnimatedText>
 
     for (int i = 0; i < len; i++) {
       String strFadeIn = "", strFadeOut = "";
-      List<String> fadeIn = List<String>(), fadeOut = List<String>();
+      List<String> fadeIn = List<String>.empty(growable: true),
+          fadeOut = List<String>.empty(growable: true);
       int pos = _prevIndex(i);
       for (int j = 0; j < separatedStrings[i].length; j++) {
         String element = separatedStrings[i][j];
@@ -530,7 +532,7 @@ class _FadeOutState extends State<_FadeOut> {
 
   @override
   void initState() {
-    localRef = List<double>();
+    localRef = List<double>.empty(growable: true);
     _putLocalRef();
     super.initState();
   }
@@ -544,7 +546,7 @@ class _FadeOutState extends State<_FadeOut> {
   }
 
   _putLocalRef() {
-    localRef = List<double>();
+    localRef = List<double>.empty(growable: true);
     widget.alphabets.forEach((_) {
       localRef.add(0.0);
     });
